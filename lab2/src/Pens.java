@@ -1,6 +1,1 @@
-
-public enum Pens {
-    PEN,
-    SMUDGE,
-    SPRAY
-}
+public enum Pens {    PEN,    SMUDGE,    SPRAY}

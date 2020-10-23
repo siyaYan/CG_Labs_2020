@@ -5,6 +5,15 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+/**
+ * Scene - the list of items that make up a scene.
+ *
+ * Eric McCreath 2009, 2019
+ * @author Xiran Yan
+ * @UID  u7167582
+ *
+ */
+
 public class chessFloor extends Item {
 
     P3D position;
@@ -31,7 +40,6 @@ public class chessFloor extends Item {
                 return null;
             }
             interPlane=ray.position.add(ray.direction.normalize().scale(t));
-            //https://www.jianshu.com/p/f7aa8b531487?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
             //1,2,3,4 are 4 corner of the rectangl;v1,v2,v3,v4 are four vector from corner point to interPlane
             P3D v1=interPlane.sub(position);
             P3D v4=interPlane.sub(position.add(highVector));
